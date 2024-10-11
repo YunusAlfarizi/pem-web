@@ -7,47 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="home">
-    <nav>
-        <h2 class="logo">Porto<span>folio</span></h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Personal</a></li>
-            <li><a href="#">Travel</a></li>
-        </ul>
-        <a href="#" class="btn">Subscribe</a>
-    </nav>
+<div class="home" id="home">
+        <nav>
+            <h2 class="logo">Porto<span>folio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#skill">Skill</a></li>
+            </ul>
+            <a href="#" class="btn">
+                <img src="logo-unesa.png" alt="Gambar 1" class="btn-image">
+                <img src="logo-mi.jpg" alt="Gambar 2" class="btn-image">
+            </a>
+        </nav>    
     <div class="image">
         <img src="home-removebg-preview.png">
     </div>
-    <div class="content">
+    <div class="content" id="content">
         <h4>Hello, Kami dari</h4>
         <h1>Kelompok <span>Sembilan</span></h1>
         <h3>Mahasiswa Manajemen Informatika</h3>
-        <a href="#"><i class="far fa-user">More About Us</i></a>
+        <a href="#about"><i class="far fa-user">More About Us</i></a>
     </div>
 </div>
 
-<section class="about">
+<section class="about" id="about">
     <div class="about-us">
         <img src="portfolio-icon-for-your-website-mobile-presentation-and-logo-design-free-vector-removebg-preview.png">
         <div class="about-text">
             <h2>About <span>Us</span></h2>
             <h5>Informatics <span>Management Students</span></h5>
             <p>Projek ini adalah kolaborasi kita yang bertujuan untuk membangun sebuah web portofolio yang interaktif dan responsif, menampilkan karya, pencapaian, serta keahlian dari masing-masing anggota tim. Dalam proyek ini, tim yang terdiri dari tiga orang akan bekerja secara kolaboratif, menggabungkan keahlian dalam desain web, pengembangan front-end, dan pengelolaan konten.</p>
-            <a href="#" class="button">Contact Us</a>
         </div>
     </div>
 </section>
 
-<section class="Personal">
+<section class="Team" id="team">
     <div class="title">
         <h2>Te<span>am</span></h2>
     </div>
     <div class="box">
         <div class="card">
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
             <h5>Elyna Yuniavelia A.</h5>
             <div class="pra">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -57,7 +59,7 @@
             </div>
         </div>
         <div class="card">
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
             <h5>Dona Tri Firgianti</h5>
             <div class="pra">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -67,7 +69,7 @@
             </div>
         </div>
         <div class="card">
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
             <h5>Yunus Alfarizi</h5>
             <div class="pra">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -79,25 +81,77 @@
     </div>
 </section>
 
-<section class="contact-me">
-    <div class="contact-text">
-        <h2>content <span>Me</h2></span></h2>
-        <div class="contact-info">
-            <div class="contect-box">
-                <div class="contact">
-                    <h4>Address</h4>
-                    <p>Universitas Negeri Surabaya</p>
+<section class="skill" id="skill">
+    <div class="title">
+        <h2>Ski<span>lls</span></h2>
+    </div>
+    <div class="box">
+        <div class="card">
+            <i class="fa-solid fa-user"></i>
+            <h5>Elyna Yuniavelia A.</h5>
+            <div class="skill-bar">
+                <p>Fotografi</p>
+                <div class="skill-box">
+                    <div class="fotografi">90%</div>
                 </div>
-                <div class="contact">
-                    <h4>Email</h4>
-                    <p>info@unesa.ac.id</p>
+                <p>Videografi</p>
+                <div class="skill-box">
+                    <div class="videografi">85%</div>
                 </div>
-                <div class="contact">
-                    <h4>Telp.</h4>
-                    <p>+6231-99421834</p>
+                <p>Blender</p>
+                <div class="skill-box">
+                    <div class="blender">75%</div>
+                </div>
+                <p>Unity</p>
+                <div class="skill-box">
+                    <div class="unity">80%</div>
                 </div>
             </div>
         </div>
+        <div class="card">
+            <i class="fa-solid fa-user"></i>
+            <h5>Dona Tri Firgianti</h5>
+            <div class="skill-bar">
+                <p>Python</p>
+                <div class="skill-box">
+                    <div class="python">75%</div>
+                </div>
+                <p>HTML</p>
+                <div class="skill-box">
+                    <div class="html">85%</div>
+                </div>
+                <p>CSS</p>
+                <div class="skill-box">
+                    <div class="css">50%</div>
+                </div>
+                <p>Figma</p>
+                <div class="skill-box">
+                    <div class="figma">70%</div>
+                </div>
+            </div>
+        </div>        
+        <div class="card">
+            <i class="fa-solid fa-user"></i>
+            <h5>Yunus Alfarizi</h5>
+            <div class="skill-bar">
+                <p>MYSQL</p>
+                <div class="skill-box">
+                    <div class="mysql">75%</div>
+                </div>
+                <p>Canva</p>
+                <div class="skill-box">
+                    <div class="canva">90%</div>
+                </div>
+                <p>PHP</p>
+                <div class="skill-box">
+                    <div class="php">60%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="skill-box">
+                    <div class="javascript">65%</div>
+                </div>
+            </div>
+        </div>        
     </div>
 </section>
 <body>
@@ -106,4 +160,3 @@
     </footer>
 </body>
 </html>
-
