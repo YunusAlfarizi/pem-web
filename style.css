@@ -165,6 +165,7 @@ h3 {
     color: white;
     border: 2px solid white;
     font-weight: bold;
+    float: right;
     padding: 13px 30px;
     border-radius: 30px;
     transition: .5s;
@@ -179,6 +180,12 @@ h3 {
     padding: 100px 0;
     background-color: black;
 }
+.team-member img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
 .title h2 {
     color: white;
     font-size: 75px;
@@ -190,15 +197,15 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 300px;
 }
 .card {
-    height: 365px;
-    width: 270px;
-    padding: 20px 35px;
+    height: 340px;
+    width: 100px;
+    padding: 15px;
     background: #141414;
     border-radius: 20px;
-    margin: 15px;
+    margin: 0;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -211,17 +218,15 @@ h3 {
     margin: 25px 0;
     color: red;
 }
+.card img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
 .card h5 {
     color: white;
-    font-size: 23px;
+    font-size: 18px;
     margin-bottom: 15px;
-}
-.pra p {
-    color: #fcfcfc;
-    font-size: 16px;
-    line-height: 27px;
-    margin-bottom: 25px;
-    text-align: justify;
 }
 .pra p a {
     background-color: red;
@@ -236,50 +241,6 @@ h3 {
     border: 2px solid red;
     cursor: pointer;
 }
-.contact-me {
-    width: 100%;
-    padding: 100px 0;
-    background-color: #101010;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contact-text h2 {
-    color: white;
-    font-size: 65px;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    text-align: center;
-}
-.contect-box {
-    color: white;
-}
-.contect-box:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-.contact {
-    width: 30%;
-    padding: 50px;
-    box-sizing: border-box;
-    text-align: center;
-    float: left;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0; 
-    font-size: 14px; 
-}
-footer p {
-    margin: 0; 
-}
 .skill {
     background-color: black !important;
     width: 100%;
@@ -289,6 +250,14 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+}
+.logo-skills img {
+    height: 35px;
+    width: auto;
+    bottom: 0;
+    left: 15%;
+    margin-right: 10px;
+    padding-top: 45px;
 }
 .skill-bar p {
     text-align: left;
