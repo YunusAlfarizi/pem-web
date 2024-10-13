@@ -1,0 +1,119 @@
+/* Background Style, same as the index page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Sama seperti background di index.html */
+    color: #fff;
+}
+
+/* CSS for About Me section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000; /* Sama seperti index.html */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid red; /* Sama seperti styling border merah di index.html */
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-right h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #e74c3c; /* Merah sama seperti di index.html */
+}
+
+.about-right p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.tabs ul li.active, .tabs ul li:hover {
+    border-bottom: 2px solid #f00;
+    color: #f00;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #f00;
+}
+
+.content ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
