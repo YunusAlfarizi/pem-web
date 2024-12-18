@@ -15,6 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#skill">Skill</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
             <a href="#" class="btn">
                 <img src="logo-unesa.png" alt="Gambar 1" class="btn-image">
@@ -38,7 +39,10 @@
         <div class="about-text">
             <h2>About <span>Us</span></h2>
             <h5>Informatics <span>Management Students</span></h5>
-            <p>Projek ini adalah kolaborasi kita yang bertujuan untuk membangun sebuah web portofolio yang interaktif dan responsif, menampilkan karya, pencapaian, serta keahlian dari masing-masing anggota tim. Dalam proyek ini, tim yang terdiri dari tiga orang akan bekerja secara kolaboratif, menggabungkan keahlian dalam desain web, pengembangan front-end, dan pengelolaan konten.</p>
+            <p>Projek ini adalah kolaborasi kita yang bertujuan untuk membangun sebuah web portofolio yang 
+                interaktif dan responsif, menampilkan karya, pencapaian, serta keahlian dari masing-masing anggota tim. 
+                Dalam proyek ini, tim yang terdiri dari tiga orang akan bekerja secara kolaboratif, 
+                menggabungkan keahlian dalam desain web, pengembangan front-end, dan pengelolaan konten.</p>
             <a href="index.html" class="button">Back to Home</a>
         </div>
     </div>
@@ -96,22 +100,22 @@
                 <div class="skill-box">
                     <div class="fotografi">90%</div>
                 </div>
-                <p>Blender</p>
+                <p>Videografi</p>
                 <div class="skill-box">
-                    <div class="videografi">85%</div>
+                    <div class="videografi">70%</div>
+                </div>
+                <p>CorelDraw</p>
+                <div class="skill-box">
+                    <div class="CorelDraw">50%</div>
                 </div>
                 <p>Unity</p>
                 <div class="skill-box">
-                    <div class="blender">65%</div>
-                </div>
-                <p>Videografi</p>
-                <div class="skill-box">
-                    <div class="unity">75%</div>
+                    <div class="unity">65%</div>
                 </div>
                 <div class="logo-skills">
                     <img src="photoshop_PNG12.png" alt="gambar 1" class="logo-skills">
                     <img src="Unity-logo.png" alt="gambar 2" class="logo-skills">
-                    <img src="blender.png" alt="gambar 3" class="logo-skills">
+                    <img src="coreldraw.png" alt="gambar 3" class="logo-skills">
                     <img src="pr.jpg" alt="gambar 4" class="logo-skills">                   
                 </div>
             </div>
@@ -150,29 +154,77 @@
             <div class="skill-bar">
                 <p>MYSQL</p>
                 <div class="skill-box">
-                    <div class="mysql">75%</div>
+                    <div class="mysql">55%</div>
                 </div>
                 <p>Canva</p>
                 <div class="skill-box">
                     <div class="canva">90%</div>
                 </div>
-                <p>PHP</p>
+                <p>Blender</p>
                 <div class="skill-box">
-                    <div class="php">60%</div>
+                    <div class="blender">80%</div>
                 </div>
                 <p>JavaScript</p>
                 <div class="skill-box">
-                    <div class="javascript">65%</div>
+                    <div class="javascript">40%</div>
                 </div>
                 <div class="logo-skills">
                     <img src="mysql_PNG22.png" alt="gambar 9" class="logo-skills">
-                    <img src="php_PNG35.png" alt="gambar 10" class="logo-skills">
+                    <img src="blender.png" alt="gambar 10" class="logo-skills">
                     <img src="JavaScript.png" alt="gambar 11" class="logo-skills">
                     <img src="canva.png" alt="gambar 12" class="logo-skills">
                 </div>
             </div>
         </div>
-          <a href="index.html" class="button">Back to Home</a>        
+            <a href="index.html" class="button">Back to Home</a>        
     </div>
 </section>
+<section class="services" id="services">
+    <div class="title">
+        <h2>Jasa <span>Joki</span></h2>
+    </div>
+    <div class="services-container">
+        <p>Kami menyediakan layanan joki profesional untuk kebutuhan:</p>
+        <div class="service-items">
+            <div class="service-item">
+                <h3><i class="fas fa-laptop-code"></i> Pembuatan Website</h3>
+                <p>Desain dan pengembangan web <span>responsif</span> sesuai kebutuhan Anda.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-mobile-alt"></i> Pembuatan Aplikasi</h3>
+                <p>Aplikasi berbasis <span>desktop</span> atau <span>mobile</span> untuk berbagai platform.</p>
+            </div>
+            <div class="service-item">
+                <h3><i class="fas fa-paint-brush"></i> Desain Grafis</h3>
+                <p>Desain <span>logo</span>, <span>poster</span>, dan kebutuhan visual lainnya.</p>
+            </div>
+        </div>
+
+            <!-- Formulir -->
+            <form action="submit_request.php" method="post" class="joki-form">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Layanan yang Dibutuhkan:</label>
+                    <select id="service" name="service" required>
+                        <option value="website">Pembuatan Website</option>
+                        <option value="aplikasi">Pembuatan Aplikasi</option>
+                        <option value="desain">Desain Grafis</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Deskripsi Kebutuhan:</label>
+                    <textarea id="message" name="message" placeholder="Jelaskan kebutuhan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="button">Kirim Permintaan</button>
+            </form>
+    </div>
+</section>
+</body>
 </html>
