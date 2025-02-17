@@ -624,7 +624,7 @@ body {
         width: 100%;
     }
     .form-group {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -674,6 +674,6 @@ body {
         height: 20px;
     }
     .form-group {
-        width: 100%;
+        width: 90%;
     }
 }
