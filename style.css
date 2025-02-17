@@ -74,12 +74,12 @@ nav ul li a:hover {
 }
 .welcome-message h1 {
     font-size: 40px;
-    color: #f60909;
+    color: #f60909; /* Warna merah atau sesuaikan */
     letter-spacing: 2px;
 }
 h2 {
     font-size: 40px;
-    color: #ffffff; 
+    color: #ffffff; /* Warna merah atau sesuaikan */
     letter-spacing: 2px;
 }
 .content {
@@ -454,8 +454,63 @@ textarea {
 .button:hover {
     background-color: #000;
 }
+
 body {
-    background-color: #000; 
-    color: #fff; 
+    background-color: #000; /* Latar belakang hitam pekat */
+    color: #fff; /* Warna teks putih untuk memastikan teks tetap terlihat */
     margin: 0;
+}
+
+/* MEDIA QUERY UNTUK MOBILE */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .logo {
+        font-size: 28px;
+    }
+    .image {
+        width: 60%;
+        right: 10px;
+    }
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        width: 90%;
+        text-align: center;
+    }
+    .content {
+        position: relative;
+        top: 50%;
+        left: 5%;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+    .title h2 {
+        font-size: 3em;
+    }
+    .button {
+        width: 100%;
+        margin-top: 20px;
+        float: none;
+    }
 }
