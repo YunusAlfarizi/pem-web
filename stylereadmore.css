@@ -1,9 +1,9 @@
-/* Background Style, same as the index page */
+/* Background Style */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #000; /* Sama seperti background di index.html */
+    background-color: #000;
     color: #fff;
 }
 
@@ -13,20 +13,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #000; /* Sama seperti index.html */
+    background-color: #000;
 }
 
 .about-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%; /* Use percentage to make it more flexible */
     max-width: 1200px;
     background-color: #333;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid red; /* Sama seperti styling border merah di index.html */
+    border: 1px solid red;
 }
 
 .about-left {
@@ -49,16 +49,18 @@ body {
 
 .about-right h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
-    color: #e74c3c; /* Merah sama seperti di index.html */
+    font-size: 2rem; /* Use rem for scalability */
+    color: #e74c3c;
 }
 
 .about-right p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+/* Tabs styles */
 .tabs ul {
     display: flex;
     list-style: none;
@@ -68,7 +70,7 @@ body {
 
 .tabs ul li {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
+    font-size: 1.25rem;
     margin-right: 20px;
     padding: 10px 15px;
     cursor: pointer;
@@ -88,7 +90,7 @@ body {
 
 .content h2 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     margin-bottom: 15px;
     color: #f00;
 }
@@ -101,9 +103,11 @@ body {
 
 .content ul li {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
+
+/* Button styling */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -116,4 +120,72 @@ body {
 
 .button:hover {
     background-color: #c0392b;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust layout for tablets and smaller screens */
+    .about-container {
+        flex-direction: column; /* Stack elements vertically */
+        width: 95%;
+    }
+
+    .about-left, .about-right {
+        flex: none; /* Prevent flex from stretching */
+        width: 100%; /* Take up full width */
+        padding: 10px;
+    }
+
+    .about-right h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-right p {
+        font-size: 1rem;
+    }
+
+    .tabs ul li {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .content h2 {
+        font-size: 1.25rem;
+    }
+
+    .content ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust layout for mobile screens */
+    .about-container {
+        width: 100%;
+    }
+
+    .about-left img {
+        max-width: 90%; /* Make image smaller */
+    }
+
+    .about-right h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-right p {
+        font-size: 0.9rem;
+    }
+
+    .tabs ul li {
+        font-size: 0.9rem;
+        margin-right: 5px;
+    }
+
+    .content h2 {
+        font-size: 1.1rem;
+    }
+
+    .content ul li {
+        font-size: 0.8rem;
+    }
 }
