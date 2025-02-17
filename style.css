@@ -623,6 +623,9 @@ body {
     .card {
         width: 100%;
     }
+    .joki-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -669,5 +672,8 @@ body {
 
     .logo-skills img {
         height: 20px;
+    }
+    .joki-form {
+        width: 100%;
     }
 }
