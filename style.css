@@ -623,7 +623,7 @@ body {
     .card {
         width: 100%;
     }
-    .joki-form {
+    .form-group {
         width: 100%;
     }
 }
@@ -673,7 +673,7 @@ body {
     .logo-skills img {
         height: 20px;
     }
-    .joki-form {
+    .form-group {
         width: 100%;
     }
 }
