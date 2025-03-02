@@ -10,7 +10,7 @@
 <div class="home" id="home">
         <nav>
             <h2 class="logo">Porto<span>folio</span></h2>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
@@ -21,6 +21,7 @@
                 <img src="logo-unesa.png" alt="Gambar 1" class="btn-image">
                 <img src="logo-mi.jpg" alt="Gambar 2" class="btn-image">
             </a>
+            <div class="hamburger">☰</div> 
         </nav>    
     <div class="image">
         <img src="home-removebg-preview.png">
@@ -48,7 +49,7 @@
     </div>
 </section>
 
-<section class="Team" id="team">
+<section class="team" id="team">
     <div class="title">
         <h2>Te<span>am</span></h2>
     </div>
@@ -226,5 +227,20 @@
         </form>
     </div>
 </section>
+<script>
+    // JavaScript untuk toggle menu
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Tutup menu saat klik item
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    });
+</script>
 </body>
 </html>
